@@ -1,0 +1,27 @@
+body {
+  background-color: #242424;
+  font-family: "Roboto", sans-serif;
+  color: rgb(83, 90, 148);
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: rgb(218, 214, 214);
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.person {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.person.animate {
+  opacity: 0;
+  transform: translateY(0);
+}

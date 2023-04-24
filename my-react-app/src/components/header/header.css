@@ -1,0 +1,11 @@
+.header {
+  width: 780px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 60px;
+  margin-left: 10px;
+}

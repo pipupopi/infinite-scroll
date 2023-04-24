@@ -1,0 +1,42 @@
+.list_wrapper {
+  width: 780px;
+  height: 480px;
+  border: 2px solid #242424;
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+.user_info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.card {
+  display: flex;
+  width: 750px;
+  height: 50px;
+  border: 2px solid #242424;
+  border-radius: 10px;
+  margin: 15px 0px 15px 13px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@keyframes fadeAndSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation-name: fadeAndSlide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
